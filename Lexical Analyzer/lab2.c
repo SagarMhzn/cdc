@@ -13,7 +13,7 @@ int main()
 	{
 		switch(state)
 		{
-			case 0;
+			case 0:
 			c=s[i++];
 				if(c=='a')
 					state = 1;
@@ -23,7 +23,7 @@ int main()
 					state = 6;
 				break;
 				
-			case 1;
+			case 1:
 			c=s[i++];
 				if(c=='a')
 					state = 3;
@@ -33,7 +33,7 @@ int main()
 					state = 6;
 				break;
 			
-			case 2;
+			case 2:
 			c=s[i++];
 				if(c=='a')
 					state = 6;
@@ -43,7 +43,7 @@ int main()
 					state = 6;
 				break;
 			
-			case 3;
+			case 3:
 			c=s[i++];
 				if(c=='a')
 					state = 3;
@@ -53,7 +53,7 @@ int main()
 					state = 6;
 				break;
 				
-			case 4;
+			case 4:
 			c=s[i++];
 				if(c=='a')
 					state = 6;
@@ -63,7 +63,7 @@ int main()
 					state = 6;
 				break;
 					
-			case 5;
+			case 5:
 			c=s[i++];
 				if(c=='a')
 					state = 6;
@@ -73,7 +73,7 @@ int main()
 					state = 6;
 				break;
 					
-			case 6;
+			case 6:
 				printf("\n %s is not recognized",s);
 				exit(0);
 		}
@@ -84,7 +84,7 @@ int main()
 	else if((state==2)||(state==4))
 		printf("\n %s is accepted under rule 'a*b+",s);
 	else 
-		printf("\n %s is accepted under rule 'abb',s");
+		printf("\n %s is accepted under rule 'abb'",s);
 		
 	return 0;
 }
